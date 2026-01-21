@@ -12,6 +12,9 @@
   --color-text-secondary: #a0a0a0;
   --color-border: #2d2d4a;
   --color-accent: #22d3ee;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --radius: 0.5rem;
 }
 
 /* 灰色主题 */
@@ -24,6 +27,9 @@
   --color-text-secondary: #a3a3a3;
   --color-border: #404040;
   --color-accent: #10b981;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --radius: 0.5rem;
 }
 
 /* 默认使用深色主题 */
@@ -36,6 +42,9 @@
   --color-text-secondary: #a0a0a0;
   --color-border: #2d2d4a;
   --color-accent: #22d3ee;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --radius: 0.5rem;
 }
 
 body {
@@ -48,6 +57,12 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
 }
 
 @layer components {
